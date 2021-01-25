@@ -13,7 +13,7 @@ function Table(props) {
                 </tr>
             </thead>
             <tbody>
-                {props.results.map(result => (
+                {props.filteredResults.map(result => (
                     <tr>
                         <th scope="row"><img alt="user_img" src={result.picture.thumbnail} /></th>
                         <td>{result.name.first} {result.name.last}</td>
